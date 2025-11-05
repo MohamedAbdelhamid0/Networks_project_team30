@@ -16,14 +16,15 @@ def main():
         data, addr = server_socket.recvfrom(1024)
         message = json.loads(data.decode())
 
-        print(f"[Server] Received: {message} from {addr}")
-        if 'timestamp' in message:
-            print(f"   ↳ Timestamp: {message['timestamp']} ({time.ctime(message['timestamp'])})")
-
+        # Extract fields for better readability
         msg_type = message.get("type")
+        session_id = message.get("session_id", "unknown")
+        ts = message.get("timestamp", int(time.time()))
+        time_str = time.ctime(ts)
+
+        print(f"[Server] Received from {addr} | session_id={session_id} | type={msg_type} | time={time_str}")
 
         if msg_type == "INIT":
-            session_id = message.get("session_id")
             sessions[session_id] = {"addr": addr, "last_seq": 0}
 
             ack_msg = {
@@ -33,11 +34,11 @@ def main():
                 "timestamp": int(time.time())
             }
             server_socket.sendto(json.dumps(ack_msg).encode(), addr)
-            print(f"[Server] Sent INIT_ACK: {ack_msg} ({time.ctime(ack_msg['timestamp'])})")
+            print(f"[Server] Sent INIT_ACK → session_id={session_id} ({time.ctime(ack_msg['timestamp'])})")
 
         elif msg_type == "DATA":
-            session_id = message.get("session_id")
             seq = message.get("seq")
+            payload = message.get("payload")
 
             if session_id not in sessions:
                 err_msg = {
@@ -47,6 +48,7 @@ def main():
                     "timestamp": int(time.time())
                 }
                 server_socket.sendto(json.dumps(err_msg).encode(), addr)
+                print(f"[Server] ERROR: Unknown session_id={session_id}")
                 continue
 
             sessions[session_id]["last_seq"] = seq
@@ -58,7 +60,7 @@ def main():
                 "timestamp": int(time.time())
             }
             server_socket.sendto(json.dumps(ack_msg).encode(), addr)
-            print(f"[Server] Sent DATA_ACK for seq={seq} ({time.ctime(ack_msg['timestamp'])})")
+            print(f"[Server] Sent DATA_ACK → session_id={session_id}, seq={seq} ({time.ctime(ack_msg['timestamp'])})")
 
 if __name__ == "__main__":
     main()
