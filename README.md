@@ -44,7 +44,5 @@ There are other fields that are added in some types of messages:
 
 
 # Transport
---> Transport Protocol: Obviously, we used UDP in our project
---> Addressing: IPV4
---> Default port for sending/receiving: 5005 
+--> Transport Protocol: Obviously, we used UDP in our project  || Addressing: IPV4 || Default port for sending/receiving: 5005 
 
