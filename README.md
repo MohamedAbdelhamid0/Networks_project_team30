@@ -59,7 +59,4 @@ All messages are UTF-8 JSON objects transmitted in single UDP datagrams.
 - No retransmission  
 - No batching yet (added in later phases)
 
----
-
-## 🗂 Repository Structure
 
