@@ -1,56 +1,62 @@
-IoT Telemetry Protocol (ITP) -Phase 1 Prototype.  
+# IoT Telemetry Protocol (ITP) — Phase 1 Prototype  
 Computer Networking (CSE361)
 
-The repository is the Phase 1 prototype of the IoT Telemetry Protocol (ITP), a simple UDP-based application-layer protocol that is based on application-level protocols and that is used to send sensor readings to a central collector as a result of IoT devices.
+This repository contains the Phase 1 prototype implementation of the IoT Telemetry Protocol (ITP), a lightweight UDP-based application-layer protocol designed for transmitting sensor readings from IoT devices to a central collector.
 
 The project includes:
-UDP client (simulator client Python)
-One python UDP server (collector)
-Mini-RFC (Sections 1-3)
-The automated baseline test script.
-Sample logs
+- A Python UDP client (sensor simulator)
+- A Python UDP server (collector)
+- Mini-RFC (Sections 1–3)
+- Automated baseline test script
+- Sample logs
 
-# 1.0 Project Overview
+---
 
-The IoT Telemetry Protocol (ITP) is a lightweight protocol that is an application layer to do work in constrained IoT environments where:
-Messages are small  
-Latency must be low  
-Overhead must be minimal  
-UDP is preferred over TCP  
+## 1.0 Project Overview
 
-# Phase 1 illustrates the essences of message exchange:
+The IoT Telemetry Protocol (ITP) is a custom, lightweight application-layer protocol designed for constrained IoT environments where:
+- Messages are small  
+- Latency must be low  
+- Overhead must be minimal  
+- UDP is preferred over TCP  
 
-INIT - INITACK  
-   A client initiates a session by a send of an INIT message.
+Phase 1 demonstrates the core message exchange:
 
-DATA - DATAACK  
-   The client propagates telemetry measurements (e.g. temperature), sequentially numbered.
+1. **INIT → INIT_ACK**  
+   The client starts a session by sending an INIT message.
 
-The server authenticates the sessions, records messages and sends back the acknowledgements.
+2. **DATA → DATA_ACK**  
+   The client sends telemetry readings (e.g., temperature), each with a sequence number.
 
-# 2.0 MiniRFC
+The server validates sessions, logs messages, and responds with acknowledgments.
 
-Message Encoding
-Messages are all UTF-8 JSON objects, which are sent in single datagrams over UDP.
+---
 
-Common Fields
-  Field          Description                            
+## 2.0 Protocol Summary (Mini-RFC Overview)
 
-  type         Type of a message (INIT, DATA, ACK, ERROR)  
-  sessionid   Client generated session identifier.      
-  timestamp Representation of the UNIX epoch seconds.                     
+### **Message Encoding**
+All messages are UTF-8 JSON objects transmitted in single UDP datagrams.
 
-Additional Fields
-  Message Type   Extra Fields                 
+### **Common Fields**
+| Field        | Description                           |
+|--------------|---------------------------------------|
+| `type`       | Message type (INIT, DATA, ACK, ERROR) |
+| `session_id` | Client-assigned session identifier     |
+| `timestamp`  | UNIX epoch seconds                    |
 
-  DATA           seq, payload             
-  INITACK       status                     
-  DATA_ACK       seq                        
-  ERROR          error (description)        
+### **Additional Fields**
+| Message Type | Extra Fields                |
+|--------------|-----------------------------|
+| DATA         | `seq`, `payload`            |
+| INIT_ACK     | `status`                    |
+| DATA_ACK     | `seq`                       |
+| ERROR        | `error` (description)       |
 
-Transport
-UDP  
-Default port: 5005  
-IPv4  
-No retransmission  
-None of the batching (introduced at subsequent stages)
+### **Transport**
+- UDP  
+- Default port: **5005**  
+- IPv4  
+- No retransmission  
+- No batching yet (added in later phases)
+
+
