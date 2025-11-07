@@ -12,7 +12,7 @@ The project includes:
 
 ---
 
-## 🚀 Project Overview
+## 1.0 Project Overview
 
 The IoT Telemetry Protocol (ITP) is a custom, lightweight application-layer protocol designed for constrained IoT environments where:
 - Messages are small  
@@ -32,7 +32,7 @@ The server validates sessions, logs messages, and responds with acknowledgments.
 
 ---
 
-## 📡 Protocol Summary (Mini-RFC Overview)
+## 2.0 Protocol Summary (Mini-RFC Overview)
 
 ### **Message Encoding**
 All messages are UTF-8 JSON objects transmitted in single UDP datagrams.
