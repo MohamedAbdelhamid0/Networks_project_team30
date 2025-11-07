@@ -42,3 +42,9 @@ There are other fields that are added in some types of messages:
 --> The DATA_ACK messages contain the same seq number as the client sent and the client can therefore know which DATA message was acknowledged.
 --> ERROR messages include an error field that is a brief description of the cause of the error (such as an invalid session ID).
 
+
+# Transport
+--> Transport Protocol: Obviously, we used UDP in our project
+--> Addressing: IPV4
+--> Default port for sending/receiving: 5005 
+
