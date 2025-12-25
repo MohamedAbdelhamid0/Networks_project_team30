@@ -80,5 +80,36 @@ Each scenario is run multiple times for statistical reliability. Results are ana
 │   └── delay/
 └── final_analysis_summary.csv
 
+```
 
-6.0 Quick Start
+## 6.0 Quick Start
+
+### Server (Linux)
+```bash
+sudo apt update
+sudo apt install python3 python3-pip -y
+pip3 install pandas
+python3 udp_server.py
+
+```
+
+
+Client (Windows / Linux)
+Edit the SERVER_IP variable in udp_client.py to match the server's IP address.
+Tip: Type ifconfig or ip a in the Linux terminal to find your IP.
+
+python udp_client.py
+
+Running Experiments
+Use the experiment automation script:
+python3 run_experiments.py
+After completion, analyze the results:
+python3 analyze_results.py
+
+7.0 Metrics Calculated
+Loss Rate: Percentage of packets not received
+Gap Rate: Percentage of received packets with missing predecessors
+Latency: Minimum, median, and maximum one-way delay (milliseconds)
+
+
+
