@@ -1,9 +1,4 @@
-# IoT Telemetry Protocol (ITP) — Phase 1 Prototype
-### Computer Networking (CSE361)
 
-The present repository holds the Phase 1 prototype implementation of the **IoT Telemetry Protocol (ITP)**, a lightweight UDP-based application-layer protocol that is used to send sensor readings of IoT-based devices to a central collector. 
-
-This system is designed for reproducible testing and robust analysis of UDP reliability under various network conditions.
 
 ---
 
