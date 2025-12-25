@@ -1,0 +1,4 @@
+Scenario,Loss Rate (%),Duplicate Rate (%),Gap Rate (%),Latency (min/median/max) (ms)
+BASELINE,0.00,0.00,0.00,1549.07 / 1553.49 / 2244.77
+LOSS,6.00,0.00,5.96,1538.93 / 1541.88 / 1737.30
+DELAY,0.00,0.00,0.00,1637.48 / 1641.08 / 2284.87

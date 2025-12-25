@@ -1,0 +1,556 @@
+vboxuser@ubuntus2204:~/Downloads/FinalProjectSubmissionFiles$ sudo python3 run_expirments.py 
+
+==============================
+UDP Experiment Automation Script
+==============================
+1. Baseline (No Clumsy)
+2. Loss (5% Drop)
+3. Delay (100ms Lag)
+Q. Quit
+Select scenario (1/2/3/Q): 1
+Enter Run Number (1-5) for baseline: 1
+
+--- Starting BASELINE Run #1 ---
+[1] Starting tcpdump on interface enp0s8...
+    tcpdump started (PID: 10386)
+[2] Starting UDP server (udp_server.py)...
+    Server started (PID: 10387). Output logged to server_log.txt
+
+==================================================
+    !!! ACTION REQUIRED !!!
+    1. CONFIGURE CLUMSY (Windows) for BASELINE test.
+    2. RUN CLIENT: python udp_client.py (on Windows PC).
+    3. Wait for client to finish (approx 20 seconds).
+==================================================
+
+>>> Press ENTER on THIS Linux terminal after the client finishes...
+
+[3] Stopping server gracefully (sending SIGINT)...
+    Server exited gracefully.
+[4] Stopping tcpdump capture...
+    tcpdump stopped.
+[5] Organizing files...
+    Files saved to raw_data/baseline/ with prefix baseline_run1
+
+--- BASELINE Run #1 COMPLETE ---
+
+==============================
+UDP Experiment Automation Script
+==============================
+1. Baseline (No Clumsy)
+2. Loss (5% Drop)
+3. Delay (100ms Lag)
+Q. Quit
+Select scenario (1/2/3/Q): 1
+Enter Run Number (1-5) for baseline: 2
+
+--- Starting BASELINE Run #2 ---
+[1] Starting tcpdump on interface enp0s8...
+    tcpdump started (PID: 10421)
+[2] Starting UDP server (udp_server.py)...
+    Server started (PID: 10422). Output logged to server_log.txt
+
+==================================================
+    !!! ACTION REQUIRED !!!
+    1. CONFIGURE CLUMSY (Windows) for BASELINE test.
+    2. RUN CLIENT: python udp_client.py (on Windows PC).
+    3. Wait for client to finish (approx 20 seconds).
+==================================================
+
+>>> Press ENTER on THIS Linux terminal after the client finishes...
+
+[3] Stopping server gracefully (sending SIGINT)...
+    Server exited gracefully.
+[4] Stopping tcpdump capture...
+    tcpdump stopped.
+[5] Organizing files...
+    Files saved to raw_data/baseline/ with prefix baseline_run2
+
+--- BASELINE Run #2 COMPLETE ---
+
+==============================
+UDP Experiment Automation Script
+==============================
+1. Baseline (No Clumsy)
+2. Loss (5% Drop)
+3. Delay (100ms Lag)
+Q. Quit
+Select scenario (1/2/3/Q): 1
+Enter Run Number (1-5) for baseline: 3
+
+--- Starting BASELINE Run #3 ---
+[1] Starting tcpdump on interface enp0s8...
+    tcpdump started (PID: 10471)
+[2] Starting UDP server (udp_server.py)...
+    Server started (PID: 10472). Output logged to server_log.txt
+
+==================================================
+    !!! ACTION REQUIRED !!!
+    1. CONFIGURE CLUMSY (Windows) for BASELINE test.
+    2. RUN CLIENT: python udp_client.py (on Windows PC).
+    3. Wait for client to finish (approx 20 seconds).
+==================================================
+
+>>> Press ENTER on THIS Linux terminal after the client finishes...
+
+[3] Stopping server gracefully (sending SIGINT)...
+    Server exited gracefully.
+[4] Stopping tcpdump capture...
+    tcpdump stopped.
+[5] Organizing files...
+    Files saved to raw_data/baseline/ with prefix baseline_run3
+
+--- BASELINE Run #3 COMPLETE ---
+
+==============================
+UDP Experiment Automation Script
+==============================
+1. Baseline (No Clumsy)
+2. Loss (5% Drop)
+3. Delay (100ms Lag)
+Q. Quit
+Select scenario (1/2/3/Q): 1
+Enter Run Number (1-5) for baseline: 4
+
+--- Starting BASELINE Run #4 ---
+[1] Starting tcpdump on interface enp0s8...
+    tcpdump started (PID: 10500)
+[2] Starting UDP server (udp_server.py)...
+    Server started (PID: 10501). Output logged to server_log.txt
+
+==================================================
+    !!! ACTION REQUIRED !!!
+    1. CONFIGURE CLUMSY (Windows) for BASELINE test.
+    2. RUN CLIENT: python udp_client.py (on Windows PC).
+    3. Wait for client to finish (approx 20 seconds).
+==================================================
+
+>>> Press ENTER on THIS Linux terminal after the client finishes...
+
+[3] Stopping server gracefully (sending SIGINT)...
+    Server exited gracefully.
+[4] Stopping tcpdump capture...
+    tcpdump stopped.
+[5] Organizing files...
+    Files saved to raw_data/baseline/ with prefix baseline_run4
+
+--- BASELINE Run #4 COMPLETE ---
+
+==============================
+UDP Experiment Automation Script
+==============================
+1. Baseline (No Clumsy)
+2. Loss (5% Drop)
+3. Delay (100ms Lag)
+Q. Quit
+Select scenario (1/2/3/Q): 1
+Enter Run Number (1-5) for baseline: 5
+
+--- Starting BASELINE Run #5 ---
+[1] Starting tcpdump on interface enp0s8...
+    tcpdump started (PID: 10511)
+[2] Starting UDP server (udp_server.py)...
+    Server started (PID: 10512). Output logged to server_log.txt
+
+==================================================
+    !!! ACTION REQUIRED !!!
+    1. CONFIGURE CLUMSY (Windows) for BASELINE test.
+    2. RUN CLIENT: python udp_client.py (on Windows PC).
+    3. Wait for client to finish (approx 20 seconds).
+==================================================
+
+>>> Press ENTER on THIS Linux terminal after the client finishes...
+
+[3] Stopping server gracefully (sending SIGINT)...
+    Server exited gracefully.
+[4] Stopping tcpdump capture...
+    tcpdump stopped.
+[5] Organizing files...
+    Files saved to raw_data/baseline/ with prefix baseline_run5
+
+--- BASELINE Run #5 COMPLETE ---
+
+==============================
+UDP Experiment Automation Script
+==============================
+1. Baseline (No Clumsy)
+2. Loss (5% Drop)
+3. Delay (100ms Lag)
+Q. Quit
+Select scenario (1/2/3/Q): 2
+Enter Run Number (1-5) for loss: 1
+
+--- Starting LOSS Run #1 ---
+[1] Starting tcpdump on interface enp0s8...
+    tcpdump started (PID: 10544)
+[2] Starting UDP server (udp_server.py)...
+    Server started (PID: 10545). Output logged to server_log.txt
+
+==================================================
+    !!! ACTION REQUIRED !!!
+    1. CONFIGURE CLUMSY (Windows) for LOSS test.
+    2. RUN CLIENT: python udp_client.py (on Windows PC).
+    3. Wait for client to finish (approx 20 seconds).
+==================================================
+
+>>> Press ENTER on THIS Linux terminal after the client finishes...
+
+[3] Stopping server gracefully (sending SIGINT)...
+    Server exited gracefully.
+[4] Stopping tcpdump capture...
+    tcpdump stopped.
+[5] Organizing files...
+    Files saved to raw_data/loss/ with prefix loss_run1
+
+--- LOSS Run #1 COMPLETE ---
+
+==============================
+UDP Experiment Automation Script
+==============================
+1. Baseline (No Clumsy)
+2. Loss (5% Drop)
+3. Delay (100ms Lag)
+Q. Quit
+Select scenario (1/2/3/Q): 2
+Enter Run Number (1-5) for loss: 2
+
+--- Starting LOSS Run #2 ---
+[1] Starting tcpdump on interface enp0s8...
+    tcpdump started (PID: 10555)
+[2] Starting UDP server (udp_server.py)...
+    Server started (PID: 10556). Output logged to server_log.txt
+
+==================================================
+    !!! ACTION REQUIRED !!!
+    1. CONFIGURE CLUMSY (Windows) for LOSS test.
+    2. RUN CLIENT: python udp_client.py (on Windows PC).
+    3. Wait for client to finish (approx 20 seconds).
+==================================================
+
+>>> Press ENTER on THIS Linux terminal after the client finishes...
+
+[3] Stopping server gracefully (sending SIGINT)...
+    Server exited gracefully.
+[4] Stopping tcpdump capture...
+    tcpdump stopped.
+[5] Organizing files...
+    Files saved to raw_data/loss/ with prefix loss_run2
+
+--- LOSS Run #2 COMPLETE ---
+
+==============================
+UDP Experiment Automation Script
+==============================
+1. Baseline (No Clumsy)
+2. Loss (5% Drop)
+3. Delay (100ms Lag)
+Q. Quit
+Select scenario (1/2/3/Q): 2
+Enter Run Number (1-5) for loss: 3
+
+--- Starting LOSS Run #3 ---
+[1] Starting tcpdump on interface enp0s8...
+    tcpdump started (PID: 10678)
+[2] Starting UDP server (udp_server.py)...
+    Server started (PID: 10679). Output logged to server_log.txt
+
+==================================================
+    !!! ACTION REQUIRED !!!
+    1. CONFIGURE CLUMSY (Windows) for LOSS test.
+    2. RUN CLIENT: python udp_client.py (on Windows PC).
+    3. Wait for client to finish (approx 20 seconds).
+==================================================
+
+>>> Press ENTER on THIS Linux terminal after the client finishes...
+
+[3] Stopping server gracefully (sending SIGINT)...
+    Server exited gracefully.
+[4] Stopping tcpdump capture...
+    tcpdump stopped.
+[5] Organizing files...
+    Files saved to raw_data/loss/ with prefix loss_run3
+
+--- LOSS Run #3 COMPLETE ---
+
+==============================
+UDP Experiment Automation Script
+==============================
+1. Baseline (No Clumsy)
+2. Loss (5% Drop)
+3. Delay (100ms Lag)
+Q. Quit
+Select scenario (1/2/3/Q): 2
+Enter Run Number (1-5) for loss: 4
+
+--- Starting LOSS Run #4 ---
+[1] Starting tcpdump on interface enp0s8...
+    tcpdump started (PID: 10693)
+[2] Starting UDP server (udp_server.py)...
+    Server started (PID: 10694). Output logged to server_log.txt
+
+==================================================
+    !!! ACTION REQUIRED !!!
+    1. CONFIGURE CLUMSY (Windows) for LOSS test.
+    2. RUN CLIENT: python udp_client.py (on Windows PC).
+    3. Wait for client to finish (approx 20 seconds).
+==================================================
+
+>>> Press ENTER on THIS Linux terminal after the client finishes...
+
+[3] Stopping server gracefully (sending SIGINT)...
+    Server exited gracefully.
+[4] Stopping tcpdump capture...
+    tcpdump stopped.
+[5] Organizing files...
+    Files saved to raw_data/loss/ with prefix loss_run4
+
+--- LOSS Run #4 COMPLETE ---
+
+==============================
+UDP Experiment Automation Script
+==============================
+1. Baseline (No Clumsy)
+2. Loss (5% Drop)
+3. Delay (100ms Lag)
+Q. Quit
+Select scenario (1/2/3/Q): 2
+Enter Run Number (1-5) for loss: 5
+
+--- Starting LOSS Run #5 ---
+[1] Starting tcpdump on interface enp0s8...
+    tcpdump started (PID: 10713)
+[2] Starting UDP server (udp_server.py)...
+    Server started (PID: 10714). Output logged to server_log.txt
+
+==================================================
+    !!! ACTION REQUIRED !!!
+    1. CONFIGURE CLUMSY (Windows) for LOSS test.
+    2. RUN CLIENT: python udp_client.py (on Windows PC).
+    3. Wait for client to finish (approx 20 seconds).
+==================================================
+
+>>> Press ENTER on THIS Linux terminal after the client finishes...
+
+[3] Stopping server gracefully (sending SIGINT)...
+    Server exited gracefully.
+[4] Stopping tcpdump capture...
+    tcpdump stopped.
+[5] Organizing files...
+    Files saved to raw_data/loss/ with prefix loss_run5
+
+--- LOSS Run #5 COMPLETE ---
+
+==============================
+UDP Experiment Automation Script
+==============================
+1. Baseline (No Clumsy)
+2. Loss (5% Drop)
+3. Delay (100ms Lag)
+Q. Quit
+Select scenario (1/2/3/Q): 3
+Enter Run Number (1-5) for delay: 1
+
+--- Starting DELAY Run #1 ---
+[1] Starting tcpdump on interface enp0s8...
+    tcpdump started (PID: 11177)
+[2] Starting UDP server (udp_server.py)...
+    Server started (PID: 11178). Output logged to server_log.txt
+
+==================================================
+    !!! ACTION REQUIRED !!!
+    1. CONFIGURE CLUMSY (Windows) for DELAY test.
+    2. RUN CLIENT: python udp_client.py (on Windows PC).
+    3. Wait for client to finish (approx 20 seconds).
+==================================================
+
+>>> Press ENTER on THIS Linux terminal after the client finishes...
+
+[3] Stopping server gracefully (sending SIGINT)...
+    Server exited gracefully.
+[4] Stopping tcpdump capture...
+    tcpdump stopped.
+[5] Organizing files...
+    Files saved to raw_data/delay/ with prefix delay_run1
+
+--- DELAY Run #1 COMPLETE ---
+
+==============================
+UDP Experiment Automation Script
+==============================
+1. Baseline (No Clumsy)
+2. Loss (5% Drop)
+3. Delay (100ms Lag)
+Q. Quit
+Select scenario (1/2/3/Q): 3
+Enter Run Number (1-5) for delay: 2
+
+--- Starting DELAY Run #2 ---
+[1] Starting tcpdump on interface enp0s8...
+    tcpdump started (PID: 11206)
+[2] Starting UDP server (udp_server.py)...
+    Server started (PID: 11207). Output logged to server_log.txt
+
+==================================================
+    !!! ACTION REQUIRED !!!
+    1. CONFIGURE CLUMSY (Windows) for DELAY test.
+    2. RUN CLIENT: python udp_client.py (on Windows PC).
+    3. Wait for client to finish (approx 20 seconds).
+==================================================
+
+>>> Press ENTER on THIS Linux terminal after the client finishes...
+
+[3] Stopping server gracefully (sending SIGINT)...
+    Server exited gracefully.
+[4] Stopping tcpdump capture...
+    tcpdump stopped.
+[5] Organizing files...
+    Files saved to raw_data/delay/ with prefix delay_run2
+
+--- DELAY Run #2 COMPLETE ---
+
+==============================
+UDP Experiment Automation Script
+==============================
+1. Baseline (No Clumsy)
+2. Loss (5% Drop)
+3. Delay (100ms Lag)
+Q. Quit
+Select scenario (1/2/3/Q): 3
+Enter Run Number (1-5) for delay: 2
+
+--- Starting DELAY Run #2 ---
+[1] Starting tcpdump on interface enp0s8...
+    tcpdump started (PID: 11220)
+[2] Starting UDP server (udp_server.py)...
+    Server started (PID: 11222). Output logged to server_log.txt
+
+==================================================
+    !!! ACTION REQUIRED !!!
+    1. CONFIGURE CLUMSY (Windows) for DELAY test.
+    2. RUN CLIENT: python udp_client.py (on Windows PC).
+    3. Wait for client to finish (approx 20 seconds).
+==================================================
+
+>>> Press ENTER on THIS Linux terminal after the client finishes...
+
+[3] Stopping server gracefully (sending SIGINT)...
+    Server exited gracefully.
+[4] Stopping tcpdump capture...
+    tcpdump stopped.
+[5] Organizing files...
+    Files saved to raw_data/delay/ with prefix delay_run2
+
+--- DELAY Run #2 COMPLETE ---
+
+==============================
+UDP Experiment Automation Script
+==============================
+1. Baseline (No Clumsy)
+2. Loss (5% Drop)
+3. Delay (100ms Lag)
+Q. Quit
+Select scenario (1/2/3/Q): 3
+Enter Run Number (1-5) for delay: 3
+
+--- Starting DELAY Run #3 ---
+[1] Starting tcpdump on interface enp0s8...
+    tcpdump started (PID: 11280)
+[2] Starting UDP server (udp_server.py)...
+    Server started (PID: 11281). Output logged to server_log.txt
+
+==================================================
+    !!! ACTION REQUIRED !!!
+    1. CONFIGURE CLUMSY (Windows) for DELAY test.
+    2. RUN CLIENT: python udp_client.py (on Windows PC).
+    3. Wait for client to finish (approx 20 seconds).
+==================================================
+
+>>> Press ENTER on THIS Linux terminal after the client finishes...
+
+[3] Stopping server gracefully (sending SIGINT)...
+    Server exited gracefully.
+[4] Stopping tcpdump capture...
+    tcpdump stopped.
+[5] Organizing files...
+    Files saved to raw_data/delay/ with prefix delay_run3
+
+--- DELAY Run #3 COMPLETE ---
+
+==============================
+UDP Experiment Automation Script
+==============================
+1. Baseline (No Clumsy)
+2. Loss (5% Drop)
+3. Delay (100ms Lag)
+Q. Quit
+Select scenario (1/2/3/Q): 3
+Enter Run Number (1-5) for delay: 4
+
+--- Starting DELAY Run #4 ---
+[1] Starting tcpdump on interface enp0s8...
+    tcpdump started (PID: 11320)
+[2] Starting UDP server (udp_server.py)...
+    Server started (PID: 11321). Output logged to server_log.txt
+
+==================================================
+    !!! ACTION REQUIRED !!!
+    1. CONFIGURE CLUMSY (Windows) for DELAY test.
+    2. RUN CLIENT: python udp_client.py (on Windows PC).
+    3. Wait for client to finish (approx 20 seconds).
+==================================================
+
+>>> Press ENTER on THIS Linux terminal after the client finishes...
+
+[3] Stopping server gracefully (sending SIGINT)...
+    Server exited gracefully.
+[4] Stopping tcpdump capture...
+    tcpdump stopped.
+[5] Organizing files...
+    Files saved to raw_data/delay/ with prefix delay_run4
+
+--- DELAY Run #4 COMPLETE ---
+
+==============================
+UDP Experiment Automation Script
+==============================
+1. Baseline (No Clumsy)
+2. Loss (5% Drop)
+3. Delay (100ms Lag)
+Q. Quit
+Select scenario (1/2/3/Q): 3
+Enter Run Number (1-5) for delay: 5
+
+--- Starting DELAY Run #5 ---
+[1] Starting tcpdump on interface enp0s8...
+    tcpdump started (PID: 11340)
+[2] Starting UDP server (udp_server.py)...
+    Server started (PID: 11341). Output logged to server_log.txt
+
+==================================================
+    !!! ACTION REQUIRED !!!
+    1. CONFIGURE CLUMSY (Windows) for DELAY test.
+    2. RUN CLIENT: python udp_client.py (on Windows PC).
+    3. Wait for client to finish (approx 20 seconds).
+==================================================
+
+>>> Press ENTER on THIS Linux terminal after the client finishes...
+
+[3] Stopping server gracefully (sending SIGINT)...
+    Server exited gracefully.
+[4] Stopping tcpdump capture...
+    tcpdump stopped.
+[5] Organizing files...
+    Files saved to raw_data/delay/ with prefix delay_run5
+
+--- DELAY Run #5 COMPLETE ---
+
+==============================
+UDP Experiment Automation Script
+==============================
+1. Baseline (No Clumsy)
+2. Loss (5% Drop)
+3. Delay (100ms Lag)
+Q. Quit
+Select scenario (1/2/3/Q): Q
+Exiting script.
+vboxuser@ubuntus2204:~/Downloads/FinalProjectSubmissionFiles$ 
